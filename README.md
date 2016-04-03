@@ -37,7 +37,7 @@ The solution.zip should be kept by the instructor.
 
 ### Hardware
 
-The hardware for the Jet robot can be acquired at the following Amazon links:
+The hardware (BOM) for the Jet robot can be acquired at the following Amazon links:
 
 TK1: http://amzn.com/sl/16YHGMBK62X6G
 
