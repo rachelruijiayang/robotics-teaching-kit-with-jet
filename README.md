@@ -37,7 +37,11 @@ The solution.zip should be kept by the instructor.
 
 ### Hardware
 
-The hardware (BOM) for the Jet robot can be acquired at the following Amazon links:
+The full hardware bill of materials (BOM) can be found here:  
+
+https://docs.google.com/spreadsheets/d/14N_tkfNsItY9CV0vUGHCPpcZ-mqgsZsC87CQEHBXMmY/edit?usp=sharing
+
+The majority of the parts can be purchase through an Amazon School List using these links:
 
 TK1: http://amzn.com/sl/16YHGMBK62X6G
 
