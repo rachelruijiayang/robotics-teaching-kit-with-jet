@@ -1,4 +1,4 @@
-# Robotics Teaching Kit with Jet
+# Robotics Teaching Kit with 'Jet'
 
 ## Overview
 
