@@ -9,8 +9,6 @@ through the modules, but each module is self-contained so you are free to skip o
 The kit is produced jointly by NVIDIA and Cal Poly San Luis Obispo.  All material is available under
 the [Creative Commons Attribution-NonCommercial License](http://creativecommons.org/licenses/by-nc/4.0/).
 
-![Jet Robot](https://goo.gl/photos/PZCSL5EWTVyvtsF17)
-
 ## Content
 
 ### Examples
