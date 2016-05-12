@@ -43,7 +43,7 @@ https://docs.google.com/spreadsheets/d/1jGn7AG5NivTjxPEppJEdIUVxhm5nB17T3ZtRTCYy
 
 https://docs.google.com/spreadsheets/d/14N_tkfNsItY9CV0vUGHCPpcZ-mqgsZsC87CQEHBXMmY/edit?usp=sharing (TK1 version)
 
- 
+
 
 The majority of the parts can be purchased through an Amazon School List using these links:
 
