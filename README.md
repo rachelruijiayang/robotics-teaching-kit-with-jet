@@ -39,12 +39,12 @@ The solution.zip should be kept by the instructor.
 
 The full hardware bill of materials (BOM) can be found here:  
 
-https://docs.google.com/spreadsheets/d/14N_tkfNsItY9CV0vUGHCPpcZ-mqgsZsC87CQEHBXMmY/edit?usp=sharing
+https://docs.google.com/spreadsheets/d/1jGn7AG5NivTjxPEppJEdIUVxhm5nB17T3ZtRTCYyuQg/edit?usp=sharing (TX1 version)
+https://docs.google.com/spreadsheets/d/14N_tkfNsItY9CV0vUGHCPpcZ-mqgsZsC87CQEHBXMmY/edit?usp=sharing (TK1 version)
 
-The majority of the parts can be purchase through an Amazon School List using these links:
+The majority of the parts can be purchased through an Amazon School List using these links:
 
 TK1: http://amzn.com/sl/16YHGMBK62X6G
-
 TX1: http://amzn.com/sl/2QNJMQAAMVYRN
 
 The `/hardware` folder includes illustrator files that can be used to laser cut
