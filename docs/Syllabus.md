@@ -11,7 +11,7 @@
 
 ### Labs
 - **Lab 1**: [Building the Robot](module1/lab1_building_robot/chassis_construction.pdf)
-- **Lab 2**: [Using ROS and Jetbot](module1/lab2_ros_introduction/ros_introduction.pdf)
+- **Lab 2**: [Using ROS and Jet](module1/lab2_ros_introduction/ros_introduction.pdf)
 
 ### Questions
 - [Student Version](module1/questions/module1_questions.pdf)

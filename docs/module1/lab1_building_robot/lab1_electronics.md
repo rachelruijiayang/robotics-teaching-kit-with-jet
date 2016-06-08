@@ -28,6 +28,8 @@ motors.
 
   ![](module1/lab1_building_robot/resources/electrical/switch1.JPG)
 
+\pagebreak
+
 * Insert the fuse into the appropriate hole in the plate.
 
   ![](module1/lab1_building_robot/resources/electrical/fuse1.JPG)
@@ -38,6 +40,8 @@ switch.
 * Cut a piece of the red 16AWG stranded wire and solder the ends to the fuse wire
 and the power switch contact
 
+\pagebreak
+
 ### 2. USB Hub
 
 The USB hub will be used to connect the Jetson TK1 with the Arduino Mega and the
@@ -45,6 +49,8 @@ Logitech camera.  Install the USB hub into the appropriate holes and secure the 
 using cable ties.  The hub will reside underneath the Jetson TK1.
 
   ![](module1/lab1_building_robot/resources/electrical/usbhub1.JPG)
+
+\pagebreak
 
 ### 3. Battery and Battery Connector
 
@@ -57,11 +63,15 @@ and use the middle ties to hold down the red HXT battery connector.
 
   ![](module1/lab1_building_robot/resources/electrical/battery1.JPG)
 
+\pagebreak
+
 * The next step is to replace the white plastic Tamiya connector on the fuse with a red HXT
 connector.  Measure the approximate length of the fuse terminal cable and cut off the Tamiya
 connector.
 
   ![](module1/lab1_building_robot/resources/electrical/battery2.JPG)
+
+\pagebreak
 
 * Solder on the new HXT connector and heat shrink the joints so that no solder joints
 are exposed.
@@ -71,6 +81,8 @@ are exposed.
 * Check that the new HXT connector fits with the battery connector.
 * Remove the battery
 
+\pagebreak
+
 ### 3. Mount the Jetson TK1
 
 The Jetson TK1 will sit above the USB hub.
@@ -78,6 +90,8 @@ The Jetson TK1 will sit above the USB hub.
 * Screw the 1" 4-40 hex standoffs to the mounting plate.
 
   ![](module1/lab1_building_robot/resources/electrical/usbhub2.JPG)
+
+\pagebreak
 
 * Once the spacers are secure, attach the Jetson TK1 to the standoffs using 4-40 screw.
 
@@ -88,6 +102,8 @@ The Jetson TK1 will sit above the USB hub.
 The Arduino Mega should be mounted in the same way as the Jetson TK1.  The standoffs for the
 Arduino Mega are 1/2" tall.
 
+\pagebreak
+
 ### 5. Install the Wireless Card and Antenna
 
 The wireless card is a mini-PCIe card that attaches to the Jetson TK1.
@@ -95,6 +111,8 @@ The wireless card is a mini-PCIe card that attaches to the Jetson TK1.
 * Plug in the wireless card and screw in the card using 2 screws.
 
   ![](module1/lab1_building_robot/resources/electrical/tk1_2.JPG)
+
+\pagebreak
 
 * Connect the 2 antenna to the wireless card.
 * Run the antenna wires through the provided hole in the mounting plate and screw in

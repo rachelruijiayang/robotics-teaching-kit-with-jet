@@ -1,6 +1,6 @@
 # Module 2: Answers
 
-1. What is the farther distance the Jet sonar module can measure?
+1. What is the farthest distance the Jet sonar module can measure?
 
   **4-5 meters**
 
@@ -14,7 +14,7 @@
   **Rate of angular rotation about an axis.**
 
 4. The Jet encoders can detect 3200 ticks per revolution.  If a wheel has moved 1000 ticks
-   forward and Jet has 6" wheels.  How many inches has the robot moved forward?
+   forward and Jet has 6 inch diameter wheels, how many inches has the robot moved forward?
 
   **5.89 in.**
 

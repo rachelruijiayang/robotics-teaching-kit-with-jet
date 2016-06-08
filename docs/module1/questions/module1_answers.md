@@ -21,7 +21,7 @@
 
   **ROS nodes are processes that perform some computation.  They can be reading a sensor and publishing the sensor value.  They can also be used to send commands to the motors.**
 
-6. What does it mean for ROS Topics to be 'strongly typed.'
+6. What does it mean for ROS Topics to be 'strongly typed'?
 
   **Topics can only send messages that are only of the correct type for that topic.**
 

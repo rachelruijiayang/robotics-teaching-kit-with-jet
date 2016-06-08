@@ -12,7 +12,7 @@ In this lab, you will use PID control to make Jet follow a line.
 
 ## Section 2: Installing the Lab
 
-To perform this lab, you will need to get the lab8_line_follower template into your catkin workspace.  First ensure that your Jetbot has internet access by connecting it using WiFi or ethernet.  Next ssh into the Jetbot and enter the following command:
+To perform this lab, you will need to get the lab8_line_follower template into your catkin workspace.  First ensure that your Jet has internet access by connecting it using WiFi or ethernet.  Next ssh into Jet and enter the following command:
 
 ```
 wget http://instructor-url/lab8_line_follower/code.zip

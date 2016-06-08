@@ -15,13 +15,13 @@ The robot should start by moving forward until it senses an object is less than 
 
 ### State Machines
 
-A useful technique for building robotic systems is a finite-state machine.  A finite-state machine has multiple states that the robot can be in.  When an event occurs (i.e. a sensor reads a specific value, the user inputs something, or a timer expires) the robot can transition from one state to another.  When implementing robot behavior, modeling the system as a finite-state machine allows you to develop each state independently so that you can isolate that logic for testing.  Finite-state machines are modeled with state diagrams.  See Figure \ref{state_diagram} is a state diagram for the Sense and Avoid lab.  Subsequent labs may require you to construct a state diagram prior to implementing the code.
+A useful technique for building robotic systems is a finite-state machine.  A finite-state machine has multiple states that the robot can be in.  When an event occurs (i.e. a sensor reads a specific value, the user inputs something, or a timer expires) the robot can transition from one state to another.  When implementing robot behavior, modeling the system as a finite-state machine allows you to develop each state independently so that you can isolate that logic for testing.  Finite-state machines are modeled with state diagrams.  See Figure&nbsp;\ref{state_diagram} is a state diagram for the Sense and Avoid lab.  Subsequent labs may require you to construct a state diagram prior to implementing the code.
 
 ![Sense And Avoid State Diagram\label{state_diagram}](module2/lab3_sense_and_avoid/resources/state_diagram.png "Sense and Avoid State Diagram")
 
 ## Section 2: Installing the Lab
 
-To perform this lab, you will need to get the sense_and_avoid template into your catkin workspace.  First ensure that your Jetbot has internet access by connecting it using WiFi or ethernet.  Next ssh into the Jetbot and enter the following command:
+To perform this lab, you will need to get the sense_and_avoid template into your catkin workspace.  First ensure that your Jet has internet access by connecting it using WiFi or ethernet.  Next ssh into Jet and enter the following command:
 
 ```
 wget http://instructor-url/lab3_sense_and_avoid/code.zip
@@ -47,7 +47,7 @@ To build the code, use the following command when you are in `~/catkin_ws/`:
 catkin_make && source devel/setup.sh
 ```
 
-To run the node, first launch the Jetbot platform (see lab2 for instructions), then run the sense_and_avoid node:
+To run the node, first launch the Jet platform (see lab2 for instructions), then run the sense_and_avoid node:
 ```
 rosrun sense_and_avoid sense_and_avoid
 ```

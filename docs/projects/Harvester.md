@@ -3,11 +3,11 @@
 ## Overview
 
 
-The goal of this project is to program the Jetbot to move all of the colored balloons into their respective goals.  Each robot will have 1 minute to score as many balloons as possible.
+The goal of this project is to program Jet to move all of the colored balloons into their respective goals.  Each robot will have 1 minute to score as many balloons as possible.
 
 ## Physical Design
 
-A sample layout for the arena is shown in Figure \ref{competition_start}.  The areaa after the robot has successfully moved all of the balloons is shown in Figure \ref{competition_end}.  The edges of the arena should be made with a tape that is distinct from the ground color.  The goals should be cardboard boxes that are either painted or covered in colored construction paper for the red and blue goals.  The balloons should be sufficiently large so that the robots can readily identify them.  
+A sample layout for the arena is shown in Figure \ref{competition_start}.  The area after the robot has successfully moved all of the balloons is shown in Figure \ref{competition_end}.  The edges of the arena should be made with a tape that is distinct from the ground color.  The goals should be cardboard boxes that are either painted or covered in colored construction paper for the red and blue goals.  The balloons should be sufficiently large so that the robots can readily identify them.  
 
 ![Competition Start\label{competition_start}](projects/resources/harvester_1.png "Competition Starting")
 

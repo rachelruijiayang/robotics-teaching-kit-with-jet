@@ -65,9 +65,11 @@ Once the install is complete, you can go ahead and disconnect the micro USB cabl
 * Install git
 
   `sudo apt-get install git`
+
 * Download the code
 
   `git clone https://github.com/jsseng/nvidia_robot.git`
+
 * Run the setup script the first time to install the Grinch kernel.  The Grinch kernel
 contains drivers not installed with the stock Nvidia Ubuntu kernel.
 
@@ -77,6 +79,7 @@ contains drivers not installed with the stock Nvidia Ubuntu kernel.
 
 After the Grinch kernel is installed, reboot the Jetson.  You can do this by issuing
 the command:
+
   `sudo reboot`
 
 ## Installing Jet Software

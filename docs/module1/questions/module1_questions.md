@@ -10,7 +10,7 @@
 
 5. Describe the capabilities of ROS nodes.
 
-6. What does it mean for ROS Topics to be 'strongly typed.'
+6. What does it mean for ROS Topics to be 'strongly typed'?
 
 7. What command is used to clean out any recently compiled ROS nodes?
 

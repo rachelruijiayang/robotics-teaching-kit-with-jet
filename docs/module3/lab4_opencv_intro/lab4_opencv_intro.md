@@ -10,7 +10,7 @@
 
 ## Section 1: Installing the Lab
 
-To perform this lab, you will need to get the source code template into your catkin workspace.  First ensure that your Jetbot has internet access by connecting it using WiFi or ethernet.  Next ssh into the Jetbot and enter the following command:
+To perform this lab, you will need to get the source code template into your catkin workspace.  First ensure that your Jet has internet access by connecting it using WiFi or ethernet.  Next ssh into Jet and enter the following command:
 
 ```
 wget http://instructor-url/lab4_opencv_intro/code.zip
@@ -143,7 +143,7 @@ The `HoughLinesP` function saves each line to the lines vector.  Each line entry
 
 ## Section 8: Line Following
 
-In this section you will use the `line_follower` node.  After completing this section, the Jetbot will be able to follow a line on the ground.  To prepare
+In this section you will use the `line_follower` node.  After completing this section, Jet will be able to follow a line on the ground.  To prepare
 
 This portion requires some setup and configuration.  First, the camera on the robot should be rotated to face towards the ground.  Next, tape will be used to construct a course that the robot must navigate.  The tape pieces should be straight and the corners of the course should be less than 30 degrees.  Choose a tape color that is different from the ground color (blue masking tape is a good choice).
 

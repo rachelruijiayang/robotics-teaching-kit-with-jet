@@ -2,7 +2,7 @@
 
 ## Overview
 
-The goal of this project is to program the Jetbot to traverse a map and find a flag.  Two robots will compete simultaneously, and the first robot to reach their flag wins after penalties have been assessed.
+The goal of this project is to program Jet to traverse a map and find a flag.  Two robots will compete simultaneously, and the first robot to reach their flag wins after penalties have been assessed.
 
 ## Physical Design
 
