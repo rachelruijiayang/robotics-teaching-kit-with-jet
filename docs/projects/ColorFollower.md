@@ -2,8 +2,7 @@
 
 ## Overview
 
-
-The goal of this project is to program Jet to move all of the colored balloons into their respective goals.  Each robot will have 1 minute to score as many balloons as possible.
+The goal of this project is to program Jet to follow an object of a specific color.  Students will perform basic image processing operations and use image information to make movement decisions.
 
 ## Requirements
 
