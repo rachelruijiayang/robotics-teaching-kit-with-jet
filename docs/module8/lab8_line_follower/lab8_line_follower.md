@@ -48,4 +48,3 @@ roslaunch lab8_line_follower lab8.launch
 ## Section 4: Implementing PID
 
 ## Section 5: Tuning PID Parameters
-

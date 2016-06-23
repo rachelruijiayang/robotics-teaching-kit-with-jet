@@ -5,13 +5,14 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <cv_bridge/cv_bridge.h>
 
+using namespace cv;
+using namespace std;
+
 cv::Mat src, gray, edges, dst, cdst;
 vector<Vec4i> lines;
 
 image_transport::Publisher user_image_pub;
 image_transport::Subscriber raw_image_sub;
-
-using namespace cv;
 
 void imageCallback(const sensor_msgs::ImageConstPtr& msg)
 {
@@ -20,23 +21,12 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg)
 
     src = cv_bridge::toCvShare(msg, "bgr8")->image;
 
-    cvtColor(src, gray, CV_BGR2GRAY);
-
-    blur( gray, dst, Size(3,3) );
-
-    Canny(dst, edges, 50, 200, 3);
-
-    cvtColor(edges, cdst, CV_GRAY2BGR);
-
-    HoughLinesP(edges, lines, 1, CV_PI/180, 80, 30, 10 );
-    for( size_t i = 0; i < lines.size(); i++ )
-    {
-        line( cdst, Point(lines[i][0], lines[i][1]),
-            Point(lines[i][2], lines[i][3]), Scalar(0,0,255), 3, 8 );
-    }
+   /*
+     * INSERT CODE HERE
+    */
 
     sensor_msgs::ImagePtr msg;
-    msg = cv_bridge::CvImage(std_msgs::Header(), "bgr8", dst).toImageMsg();
+    msg = cv_bridge::CvImage(std_msgs::Header(), "bgr8", src).toImageMsg();
 
     user_image_pub.publish(msg);
   }
@@ -48,7 +38,7 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg)
 
 int main(int argc, char **argv)
 {
-  ros::init(argc, argv, "line_follower");
+  ros::init(argc, argv, "basic_cv");
   ros::NodeHandle nh;
 
   image_transport::ImageTransport it(nh);
@@ -57,11 +47,7 @@ int main(int argc, char **argv)
   user_image_pub = it.advertise("/user/image1", 1);
 
   //subscribe to the raw usb camera image
-  raw_image_sub = it.subscribe("/cv_camera/image_raw", 1, imageCallback);
-
-  vel_pub = nh.advertise<geometry_msgs::Twist>("/cmd_vel", 1);
-
-  vel_msg.linear.x = .2;
+  raw_image_sub = it.subscribe("/usb_cam/image_raw", 1, imageCallback);
 
   ros::spin();
 }

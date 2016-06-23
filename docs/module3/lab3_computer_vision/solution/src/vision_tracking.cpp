@@ -5,6 +5,8 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <cv_bridge/cv_bridge.h>
 #include "geometry_msgs/Twist.h"
+#include <dynamic_reconfigure/server.h>
+#include "lab3_computer_vision/HueConfig.h"
 
 cv::Moments moments;
 cv::Mat src, hsv, mask;
@@ -21,19 +23,21 @@ geometry_msgs::Twist vel_msg;
 double line_center = 0;
 int intersections = 0;
 
+int hue_lower, hue_upper, sat_lower, sat_upper, value_lower, value_upper;
+bool first_reconfig = true;
+
 void imageCallback(const sensor_msgs::ImageConstPtr& msg)
 {
   try
   {
-
     src = cv_bridge::toCvShare(msg, "bgr8")->image;
 
     //Convert the image to HSV
     cv::cvtColor(src, hsv, CV_BGR2HSV);
 
     //Define the range of blue pixels
-    cv::Scalar lower_thresh(80,50,50);
-    cv::Scalar upper_thresh(150, 255,255);
+    cv::Scalar lower_thresh(hue_lower, sat_lower, value_lower);
+    cv::Scalar upper_thresh(hue_upper, sat_upper, value_upper);
 
     //Create a mask with only blue pixels
     cv::inRange(hsv, lower_thresh, upper_thresh, mask);
@@ -44,12 +48,6 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg)
     //Calculate center of mass using moments
     center_of_mass.x = moments.m10 / moments.m00;
     center_of_mass.y = moments.m01 / moments.m00;
-
-    //Compute and publish the robot velocity
-    vel_msg.angular.z = (-1.0 * center_of_mass.x / src.cols + 0.5) / 3.0;
-    vel_pub.publish(vel_msg);
-
-    ROS_INFO("%f", vel_msg.angular.z);
 
     //Conert the image back to BGR
     cv::cvtColor(mask, dst, CV_GRAY2BGR);
@@ -68,23 +66,47 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg)
   }
 }
 
+void reconfigure_callback(lab3_computer_vision::HueConfig &config, uint32_t level)
+{
+  if (first_reconfig)
+  {
+    first_reconfig = false;
+    return;
+  }
+
+  hue_lower = config.hue_lower;
+  hue_upper = config.hue_upper;
+  sat_lower = config.sat_lower;
+  sat_upper = config.sat_upper;
+  value_lower = config.value_lower;
+  value_upper = config.value_upper;
+}
+
 int main(int argc, char **argv)
 {
-  ros::init(argc, argv, "line_follower");
+  ros::init(argc, argv, "vision_tracking");
   ros::NodeHandle nh;
 
+  ros::NodeHandle nh_("~");
+  nh_.param<int>("hue_lower", hue_lower, 80);
+  nh_.param<int>("hue_upper", hue_upper, 150);
+  nh_.param<int>("sat_lower", sat_lower, 20);
+  nh_.param<int>("sat_upper", sat_upper, 255);
+  nh_.param<int>("value_lower", value_lower, 20);
+  nh_.param<int>("value_upper", value_upper, 255);
+
   image_transport::ImageTransport it(nh);
+
+  dynamic_reconfigure::Server<lab3_computer_vision::HueConfig> config_server;
+  dynamic_reconfigure::Server<lab3_computer_vision::HueConfig>::CallbackType f;
+  f = boost::bind(&reconfigure_callback, _1, _2);
+  config_server.setCallback(f);
 
   //advertise the topic with our processed image
   user_image_pub = it.advertise("/user/image1", 1);
 
   //subscribe to the raw usb camera image
-  raw_image_sub = it.subscribe("/cv_camera/image_raw", 1, imageCallback);
-
-  //advertise the velocity topic
-  vel_pub = nh.advertise<geometry_msgs::Twist>("/cmd_vel", 1);
-
-  vel_msg.linear.x = .2;
+  raw_image_sub = it.subscribe("/usb_cam/image_raw", 1, imageCallback);
 
   ros::spin();
 }
