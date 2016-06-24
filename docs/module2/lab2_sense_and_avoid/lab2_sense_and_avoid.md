@@ -17,7 +17,7 @@ The robot should start by moving forward until it senses an object is less than 
 
 A useful technique for building robotic systems is a finite-state machine.  A finite-state machine has multiple states that the robot can be in.  When an event occurs (i.e. a sensor reads a specific value, the user inputs something, or a timer expires) the robot can transition from one state to another.  When implementing robot behavior, modeling the system as a finite-state machine allows you to develop each state independently so that you can isolate that logic for testing.  Finite-state machines are modeled with state diagrams.  See Figure&nbsp;\ref{state_diagram} is a state diagram for the Sense and Avoid lab.  Subsequent labs may require you to construct a state diagram prior to implementing the code.
 
-![Sense And Avoid State Diagram\label{state_diagram}](module2/lab3_sense_and_avoid/resources/state_diagram.png "Sense and Avoid State Diagram")
+![Sense And Avoid State Diagram\label{state_diagram}](module2/lab2_sense_and_avoid/resources/state_diagram.png "Sense and Avoid State Diagram")
 
 ## Section 2: Installing the Lab
 
