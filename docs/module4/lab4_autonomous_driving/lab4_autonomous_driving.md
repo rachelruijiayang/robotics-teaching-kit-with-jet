@@ -15,22 +15,17 @@ In this lab, you will train a Neural Network to navigate a course autonomously.
 To perform this lab, you will need to get the lab4_autonomous_driving template into your catkin workspace.  First ensure that your Jet has internet access by connecting it using WiFi or ethernet.  Next ssh into Jet and enter the following command:
 
 ```
-wget http://instructor-url/lab4_autonomous_driving/code.zip
+wget http://instructor-url/lab4_autonomous_driving/lab4_autonomous_driving-code.zip
 ```
 
 Where the url should be replaced by the URL provided by your instructor.  Now unzip the lab:
 ```
-unzip code.zip
-```
-
-Move the resulting folder into your catkin workspace:
-```
-mv lab4_autonomous_driving ~/catkin_ws/src/jetlabs/
+unzip lab4_autonomous_driving-code.zip -d ~/catkin_ws/src/jetlabs/lab4_autonomous_driving
 ```
 
 Delete the zip file:
 ```
-rm code.zip
+rm lab4_autonomous_driving-code.zip
 ```
 
 To build the code, use the following command when you are in `~/catkin_ws/`:

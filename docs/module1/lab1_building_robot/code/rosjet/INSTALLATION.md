@@ -56,45 +56,27 @@ Force USB Recovery Mode:
   * You can check if the board is in Recovery mode by connecting to the Jetson board via ssh and running `lsusb`.  There should be a device with vendor 'NVidia Corp'
   * Begin the flashing process on the host by pressing Enter.  This will take several minutes.
 
-## Installing the Jet software
+## Installing rosjet
 
-Once the install is complete, you can go ahead and disconnect the micro USB cable.  Now we will install the rosjet libraries and utilities.  On your host computer, download the lab1 zip file from your instructor.
-
-* On your host computer, download the lab1 zip file from your instructor, then unzip the folder.
-
-  `wget http://instructorurl/lab1_building_robot-code.zip; unzip lab1_building_robot-code.zip; rm lab1_building_robot-code.zip`
+Once the install is complete, you can go ahead and disconnect the micro USB cable.  Now we will install the rosjet libraries and utilities.
 
 * Connect to the Jetson via ssh
   The username is 'ubuntu' and the password is 'ubuntu'. You can find it's ip address by looking at your router's configuration.
 
-* On the Jetson, install git
+* Install git
 
   `sudo apt-get install git`
 
-* On the Jetson, make the ROS workspace directory
+* Make the ROS workspace directory
 
   `mkdir -p ~/catkin_ws/src; cd ~/catkin_ws/src`
 
-* On your host computer, extract the lab1 zip file.  Then copy the `rosjet` folder to the Jetson
+* Clone this repository into the workspace
 
-  `scp -r ~/lab1_building_robot-code/rosjet ubuntu@JETSONURL:~/catkin_ws/src/rosjet`
+  `git clone https://github.com/NVIDIAGPUTeachingKit/rosjet.git`
 
-* On the Jetson, run the ros configuration script
+* Run the ros configuration script
 
   `./rosjet/rosjet_install.sh`
 
 * Configuration of the Jetson is now complete; reboot the Jetson board before continuing.
-
-* On the host computer, create a folder for ROS packages:
-
-  `mkdir -p ~/catkin_ws/src; cd ~/catkin_ws/src`
-
- * On the host computer, copy the `jethost` folder to the workspace
-
-  `cp -r ~/lab1_building_robot-code/jethost ~/catkin_ws/src/jethost`
-
- * On the host computer, run the jethost installation script
-
-  `./jethost/jethost_install.sh`
-
-  * Now the setup process is complete.

@@ -54,7 +54,7 @@ for m in modules:
 
         # Zip the source directory
         if os.path.exists(os.path.join(cwd, m, l, "code")):
-            zf = zipfile.ZipFile(os.path.join(lab_build_dir, "code.zip"), "w", zipfile.ZIP_DEFLATED)
+            zf = zipfile.ZipFile(os.path.join(lab_build_dir, l + "-code.zip"), "w", zipfile.ZIP_DEFLATED)
             src = os.path.join(cwd, m, l, "code")
             for dirname, subdirs, files in os.walk(src):
                 for filename in files:
@@ -65,7 +65,7 @@ for m in modules:
 
         # Zip the source directory
         if os.path.exists(os.path.join(cwd, m, l, "solution")):
-            zf = zipfile.ZipFile(os.path.join(lab_build_dir, "solution.zip"), "w", zipfile.ZIP_DEFLATED)
+            zf = zipfile.ZipFile(os.path.join(lab_build_dir, l + "-solution.zip"), "w", zipfile.ZIP_DEFLATED)
             src = os.path.join(cwd, m, l, "solution")
             for dirname, subdirs, files in os.walk(src):
                 for filename in files:

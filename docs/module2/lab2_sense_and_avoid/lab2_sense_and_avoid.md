@@ -24,22 +24,17 @@ A useful technique for building robotic systems is a finite-state machine.  A fi
 To perform this lab, you will need to get the sense_and_avoid template into your catkin workspace.  First ensure that your Jet has internet access by connecting it using WiFi or ethernet.  Next ssh into Jet and enter the following command:
 
 ```
-wget http://instructor-url/lab2_sense_and_avoid/code.zip
+wget http://instructor-url/lab2_sense_and_avoid/lab2_sense_and_avoid-code.zip
 ```
 
 Where the url should be replaced by the URL provided by your instructor.  Now unzip the lab:
 ```
-unzip code.zip
-```
-
-Move the resulting folder into your catkin workspace:
-```
-mv lab2_sense_and_avoid ~/catkin_ws/src/jetlabs/
+unzip lab1_sense_and_avoid-code.zip -d ~/catkin_ws/src/jetlabs/lab2_sense_and_avoid
 ```
 
 Delete the zip file:
 ```
-rm code.zip
+rm lab2_sense_and_avoid-code.zip
 ```
 
 To build the code, use the following command when you are in `~/catkin_ws/`:

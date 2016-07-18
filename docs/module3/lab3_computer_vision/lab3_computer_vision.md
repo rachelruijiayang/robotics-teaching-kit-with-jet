@@ -17,22 +17,17 @@ In this lab, you will explore a variety of techniques in Computer Vision.  These
 To perform this lab, you will need to get the lab3_computer_vision template into your catkin workspace.  First ensure that your Jet has internet access by connecting it using WiFi or ethernet.  Next ssh into Jet and enter the following command:
 
 ```
-wget http://instructor-url/lab3_computer_vision/code.zip
+wget http://instructor-url/lab3_computer_vision/lab3_computer_vision-code.zip
 ```
 
 Where the url should be replaced by the URL provided by your instructor.  Now unzip the lab:
 ```
-unzip code.zip
-```
-
-Move the resulting folder into your catkin workspace:
-```
-mv lab3_computer_vision ~/catkin_ws/src/jetlabs/
+unzip lab3_computer_vision-code.zip -d ~/catkin_ws/src/jetlabs/lab3_computer_vision
 ```
 
 Delete the zip file:
 ```
-rm code.zip
+rm lab3_computer_vision-code.zip
 ```
 
 To build the code, use the following command when you are in `~/catkin_ws/`:
@@ -165,7 +160,7 @@ The `vision_tracking` node will identify and track a colored object.  Choose an 
 
 We have already looked at the BGR and grayscale representations of images, and now we will examine another way of representing images - HSV (Hue, Saturation, and Value).  Like BGR, HSV matrices have three numbers.  The first number, the Hue, is an 8-bit integer that corresponds to the color of the pixel.  The second number, the saturation, is an 8-bit integer that corresponds to the whiteness of the pixel.  The third number, the value, corresponds to the lightness of the pixel.  Computer vision applications that must deal with colors generally prefer the HSV representation because the color of each pixel is encoded in a single number rather than three in the BGR representation.
 
-Our first step in building a tracking program is to find the pixels that are in the object. To do this, we will perform color-based segmentation.  Segmentation is the process of extracting certain components from the image.  The code below creates the `HSV` matrix using the HSV representation of the original image.   Then two scalar values are instantiated.  Finally, the `inRange` function is called.  The `inRange` function call sets the `mask` matrix's pixels to 255 when the corresponding `HSV` matrix pixel is within the range of the two thresholds and to 0 when it is outside the range.  Add the code below to the `imageCallback` function. 
+Our first step in building a tracking program is to find the pixels that are in the object. To do this, we will perform color-based segmentation.  Segmentation is the process of extracting certain components from the image.  The code below creates the `HSV` matrix using the HSV representation of the original image.   Then two scalar values are instantiated.  Finally, the `inRange` function is called.  The `inRange` function call sets the `mask` matrix's pixels to 255 when the corresponding `HSV` matrix pixel is within the range of the two thresholds and to 0 when it is outside the range.  Add the code below to the `imageCallback` function.
 ```
 //Convert the image to HSV
 cv::cvtColor(src, hsv, CV_BGR2HSV);

@@ -10,12 +10,9 @@
 - **1.5** Introduction to ROS
 
 ### Labs
-- **Lab 1**: [Building the Robot](module1/lab1_building_robot/chassis_construction.pdf)
-- **Lab 2**: [Using ROS and Jet](module1/lab2_ros_introduction/ros_introduction.pdf)
+- **Lab 1**: Building the Robot
 
-### Questions
-- [Student Version](module1/questions/module1_questions.pdf)
-- [Answers](module1/questions/module1_answers.pdf)
+### Quiz Questions
 
 ---
 
@@ -26,11 +23,9 @@
 - **2.2** Camera, Motors, and Encoders
 
 ### Labs
-- **Lab 3**: [Sense and Avoid](module2/lab3_sense_and_avoid/lab3.pdf)
+- **Lab 2**: Sense and Avoid
 
-### Questions
-- [Student Version](module2/questions/module2_questions.pdf)
-- [Answers](module2/questions/module2_answers.pdf)
+### Quiz Questions
 
 ---
 
@@ -42,16 +37,23 @@
 - **3.3** Image Moments
 
 ### Labs
-- **Lab 4**: [OpenCV Intro](module3/lab4_opencv_intro/lab4.pdf)
-- **Lab 5**: [Object Tracking](module3/lab5_object_tracking/lab5.pdf)
+- **Lab 3**: Computer Vision
 
-### Questions
-- [Student Version](module3/questions/module3_questions.pdf)
-- [Answers](module3/questions/module3_answers.pdf)
+### Quiz Questions
 
 ---
 
 ## Module 4: Machine Learning
+
+### Lecture Slides
+- **4.1** Introduction to Machine Learning
+- **4.2** Neural Networks
+- **4.3** Caffe
+
+### Labs
+- **Lab 4**: Autonomous Driving
+
+### Quiz Questions
 
 ---
 
@@ -76,5 +78,6 @@
 ---
 ## Module 10: Final Project
 
-- [Harvester](projects/Harvester.pdf)
-- [Capture-the-Flag](projects/Capture-the-Flag.pdf)
+- Harvester
+- Capture-the-Flag
+- ColorFollower
