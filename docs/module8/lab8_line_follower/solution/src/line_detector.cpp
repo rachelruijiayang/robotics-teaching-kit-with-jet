@@ -31,11 +31,11 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg)
     //Convert the image to HSV
     cv::cvtColor(src, hsv, CV_BGR2HSV);
 
-    //Define the range of blue pixels
-    cv::Scalar lower_thresh(80,50,50);
-    cv::Scalar upper_thresh(150, 255,255);
+    //lower and upper thresholds for pixels on the line
+    cv::Scalar lower_thresh(0,0,127);
+    cv::Scalar upper_thresh(255, 255,255);
 
-    //Create a mask with only blue pixels
+    //Create a mask with only white pixels
     cv::inRange(hsv, lower_thresh, upper_thresh, mask);
 
     //Calculate moments of mask
@@ -45,10 +45,16 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg)
     center_of_mass.x = moments.m10 / moments.m00;
     center_of_mass.y = moments.m01 / moments.m00;
 
-    //Calculate Noramlized Error
-    error_msg.data = center_of_mass.x - src.cols/2;
+    // send a special error if the mass is below a threshold:
+    if(moments.m00 > 6000){
+        //Calculate Noramlized Error
+        error_msg.data = center_of_mass.x - src.cols/2;
+    }else{
+        // special error message
+        error_msg.data = 12345;
+    }
     line_error_pub.publish(error_msg);
-    
+
     //Conert the image back to BGR
     cv::cvtColor(mask, dst, CV_GRAY2BGR);
 
@@ -76,7 +82,7 @@ int main(int argc, char **argv)
   image_transport::ImageTransport it(nh);
 
   //advertise the topic that outputs line error
-  line_error_pub = nh.advertise<std_msgs::Float32>("/line_error", 10);  
+  line_error_pub = nh.advertise<std_msgs::Float32>("/line_error", 10);
 
   //advertise the topic with our processed image
   user_image_pub = it.advertise("/user/image1", 10);
