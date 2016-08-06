@@ -29,17 +29,17 @@ Once Jetpack is up and running perform the following actions:
 * Select TK1 as target board
 * Click the `Clear Actions` button (upper right corner).  This will de-select all of the options.
 * Select the following options for install:
-  * `Driver for OS`
-  * `File System`
-  * `Flash OS`
-  * `CUDA Toolkit for L4T`
-  * `cuDNN Package`
-  * `OpenCV for Tegra`
-  * also select the box `Automatically resolve dependency conflicts`
+    - `Driver for OS`
+    - `File System`
+    - `Flash OS`
+    - `CUDA Toolkit for L4T`
+    - `cuDNN Package`
+    - `OpenCV for Tegra`
+    - also select the box `Automatically resolve dependency conflicts`
 * On the Network Layout page:
-  * Select `Device accesses Internet via router/switch`
+    - Select `Device accesses Internet via router/switch`
 * On the Network Interface Selection page:
-  * select `eth0` (assuming your host computer only has 1 ethernet)
+    - select `eth0` (assuming your host computer only has 1 ethernet)
 
 ## Flash the OS
 
@@ -51,10 +51,10 @@ Force USB Recovery Mode:
 * Connect the micro USB cable to the Jetson TK1 and the host computer
 * Plug the AC power adapter into AC power and connect the power jack to the board
 * Enter USB Recovery Mode using the following sequence:
-  * Press and release Power button
-  * Hold down the Force Recovery button, then press and release Reset (while holding down Force Recovery)
-  * You can check if the board is in Recovery mode by connecting to the Jetson board via ssh and running `lsusb`.  There should be a device with vendor 'NVidia Corp'
-  * Begin the flashing process on the host by pressing Enter.  This will take several minutes.
+    - Press and release Power button
+    - Hold down the Force Recovery button, then press and release Reset (while holding down Force Recovery)
+    - You can check if the board is in Recovery mode by connecting to the Jetson board via ssh and running `lsusb`.  There should be a device with vendor 'NVidia Corp'
+    - Begin the flashing process on the host by pressing Enter.  This will take several minutes.
 
 ## Installing the Jet software
 
@@ -97,4 +97,44 @@ Once the install is complete, you can go ahead and disconnect the micro USB cabl
 
   `./jethost/jethost_install.sh`
 
-  * Now the setup process is complete.
+## Configuring ROS Environment Parameters
+
+ * On your host computer, lookup your own IP address
+
+  `ifconfig wlan0` if using WiFI
+
+  `ifconfig eth0` if using ethernet
+
+ * Lookup the Jetson's IP address using your router settings or connecting Jet to an HDMI monitor
+
+ * Edit your `/etc/hosts`
+
+  `sudo echo "YOUR_IP_ADDRESS jethost" >> /etc/hosts`
+
+  `sudo echo "JET_IP_ADDRESS jetbot >> /etc/hosts"`
+
+ * Set ROS_MASTER_URI in .bashrc
+
+  `echo "export ROS_MASTER_URI=http://jet:11311" >> ~/.bashrc`
+
+ * Source .bashrc
+
+  `source ~/.bashrc`
+
+ * SSH into Jet and perform similar updates
+
+ `sudo echo "YOUR_IP_ADDRESS jethost" >> /etc/hosts`
+
+ `sudo echo "localhost jet >> /etc/hosts"`
+
+ `echo "export ROS_MASTER_URI=http://localhost:11311" >> ~/.bashrc`
+
+ * Verify the configurations by running jet_real.launch on Jet
+
+  `source ~/.bashrc; source catkin_ws/devel/setup.sh; roslaunch jet_bringup jet_real.launch`
+
+ * On the jethost, make sure you can see the topics
+
+  `rostopic list` should return all topics
+
+  `rostopic echo arduino/encoder_left_value` should show the left encoder's data

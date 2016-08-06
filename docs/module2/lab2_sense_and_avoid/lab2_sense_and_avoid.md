@@ -24,10 +24,10 @@ A useful technique for building robotic systems is a finite-state machine.  A fi
 To perform this lab, you will need to get the sense_and_avoid template into your catkin workspace.  First ensure that your Jet has internet access by connecting it using WiFi or ethernet.  Next ssh into Jet and enter the following command:
 
 ```
-wget http://instructor-url/lab2_sense_and_avoid/lab2_sense_and_avoid-code.zip
+wget http://http://nvidiagputeachingkit.github.io/rosjet/labs/lab2/lab2_sense_and_avoid-code.zip
 ```
 
-Where the url should be replaced by the URL provided by your instructor.  Now unzip the lab:
+Now unzip the lab:
 
 ```
 unzip lab2_sense_and_avoid-code.zip -d ~/catkin_ws/src/jetlabs/lab2_sense_and_avoid
@@ -53,6 +53,7 @@ roslaunch lab2_sense_and_avoid lab2.launch
 ## Section 3: Reading Sensor Values
 
 Sensor values are published to specific ROS topics that we can subscribe to.  In the second lab on ROS, you used `rostopic echo` to display the messages in the terminal.  Now we will listen to these messages with functions.  Any interaction with the ROS environment requires the initialization of a NodeHandle.  A NodeHandle refers to the node that we are creating.  With the NodeHandle, you can publish your own topics or services, subscribe to topics or services, and read/set ROS paramters.  A NodeHandle can be constructed with no arguments or a string.  If you use a string in the constructor, then all new topics or services or parameters created by the node will be under the namespace of the string.  We will use the default NodeHandle constructor with no namespace, but you can refer to the ROS Docs for more advanced usage (http://wiki.ros.org/roscpp/Overview/NodeHandles).  The line below creates a new NodeHandle for our ROS node:
+
 ```
 ros::NodeHandle nh;
 ```
