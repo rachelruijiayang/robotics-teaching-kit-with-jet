@@ -14,12 +14,12 @@ In this lab, you will implement the A* planning algorithm to develop a path for 
 To perform this lab, you will need to get the lab6_path_planning template into your catkin workspace.  First ensure that your Jet has internet access by connecting it using WiFi or ethernet.  Next ssh into Jet and enter the following command:
 
 ```
-wget http://instructor-url/lab8_line_follower/lab6_path_planning-code.zip
+wget http://instructor-url/lab6_path_planning/lab6_path_planning-code.zip
 ```
 
 Where the url should be replaced by the URL provided by your instructor.  Now unzip the lab:
 ```
-unzip lab8_line_follower-code.zip -d ~/catkin_ws/src/jetlabs/lab6_path_planning
+unzip lab6_path_planning-code.zip -d ~/catkin_ws/src/jetlabs/lab6_path_planning
 ```
 
 Delete the zip file:
