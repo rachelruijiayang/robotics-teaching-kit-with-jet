@@ -1,5 +1,3 @@
-rostopic pub /dead_reckoning/goal geometry_msgs/Pose '{position: {x: 5.0, y: 5.0, z: 0.0}, orientation: {w: 1.0}}'
-
 # Lab 5: Dead Reckoning
 
 ## Learning Outcomes
@@ -72,11 +70,42 @@ need to maintain the state of the robot in several class fields.  You can add th
 
 What state should be maintained?  The current value of the encoders is already maintained for you in `left_count` and `right_count`.  You will need to know the difference in time between updates, so you should store the previous time in a class field.  Additionally, you need to maintain the current x_pos, y_pos, and angle of the robot.
 
-The code at the end of the `publishOdom` method provides a hint as to what variables you should use.  Feel free to modify the odometry message publishing if you devise a different way of tracking the state of the robot.  
+The code at the end of the `publishOdom` method provides a hint as to what variables you should use.  Feel free to modify the odometry message publishing if you devise a different way of tracking the state of the robot.  Below are the equations that you can use to calculate x_pos, y_pos, and angle.
+
+```
+x_pos = (v_r + v_l) * (r / 2) * cos ( angle ) + x_pos_0
+y_pos = (v_r + v_l) * (r / 2) * sin ( angle ) + y_pos_0
+angle = r * (v_r + v_l) / l + angle_0
+```
+
+- v_r is number of encoder ticks since last reading for right wheel
+- v_l is number of encoder ticks since last reading for left wheel
+- r is the radius of the wheel
+- l is the separation of the wheels
+
+Once you have implemented your solution, compare your reading against the `odom` topic.
+Use `ROS_INFO` to debug your code.  You may find that after refinements you can more accurately
+measure the position of the robot than the built-in `odom` topic!  Use a tape measure to help you
+calibrate your solution; add multipliers to the velocities or position updates to achieve the
+best results possible.
 
 ## Section 5: Moving to Goals
 
+Now that you can relatively accurately determine where the robot is located, you can use this data
+to navigate to goal positions.  Let's implement this functionality in the `move` function.  When
+a message is sent to the `/dead_reckoning/goal` topic, the variable `navigating` is set to true and the variable `goal` is set to the goal `Pose`.  In this lab we will only worry about getting to the x and y goal location and not the orientation.
 
+Within the `move` method, first write the code necessary to compute what direction the goal Pose is from the current `Pose` of the robot.  This direction should be in radians and between -PI and +PI.
+Use `ROS_INFO` to display the direction.  You can send goal messages to the node with the following command:
+
+```
+rostopic pub /dead_reckoning/goal geometry_msgs/Pose '{position: {x: 5.0, y: 5.0, z: 0.0}, orientation: {w: 1.0}}'
+```
+
+After you calculate the angle between the current pose and goal pose, you should use `vel_pub` to publish velocity messages until the robot is pointing towards the goal pose.  After you have turned the robot towards the goal, publish velocity messages that make the robot drive forward until it reaches the destination.  Since your measurements are noisy, you should specify a threshold value
+ that determine when you stop moving once you are within the threshold of the destination.
+
+Thoroughly test your design using many different goals.
 
 ## Section 6: Challenge
 
