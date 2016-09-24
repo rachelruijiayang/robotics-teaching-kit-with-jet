@@ -1,4 +1,4 @@
-# Lab 8: Line Follower
+# Lab 7: Line Follower
 
 ## Learning Outcomes
 - Use HSV Segmentation
@@ -12,30 +12,30 @@ In this lab, you will use PID control to make Jet follow a line.
 
 ## Section 2: Installing the Lab
 
-To perform this lab, you will need to get the lab8_line_follower template into your catkin workspace.  First ensure that your Jet has internet access by connecting it using WiFi or ethernet.  Next ssh into Jet and enter the following command:
+To perform this lab, you will need to get the lab7_line_follower template into your catkin workspace.  First ensure that your Jet has internet access by connecting it using WiFi or ethernet.  Next ssh into Jet and enter the following command:
 
 ```
-wget http://instructor-url/lab8_line_follower/lab8_line_follower-code.zip
+wget http://instructor-url/lab7_line_follower/lab7_line_follower-code.zip
 ```
 
 Where the url should be replaced by the URL provided by your instructor.  Now unzip the lab:
 ```
-unzip lab8_line_follower-code.zip -d ~/catkin_ws/src/jetlabs/lab8_line_follower
+unzip lab7_line_follower-code.zip -d ~/catkin_ws/src/jetlabs/lab7_line_follower
 ```
 
 Delete the zip file:
 ```
-rm lab8_line_follower-code.zip
+rm lab7_line_follower-code.zip
 ```
 
 To build the code, use the following command when you are in `~/catkin_ws/`:
 ```
-catkin_make --pkg lab8_line_follower && source devel/setup.sh
+catkin_make --pkg lab7_line_follower && source devel/setup.sh
 ```
 
 To run the system, execute the following
 ```
-roslaunch lab8_line_follower lab8.launch
+roslaunch lab7_line_follower lab7.launch
 ```
 
 ## Section 3: Calculating the Error
@@ -68,7 +68,7 @@ Finally, we the `prev_error` to the `cur_error`.
 
 ## Section 5: Tuning PID Parameters
 
-Open the `lab8.launch` file and set the Kp value to 0.01.  Now compile and launch the lab.  Set the robot on a line and assess how well the robot follows the line.  Kill `lab8.launch` and adjust the parameters in the launch file slowly to achieve a smooth drive down the length of the line.  Remember that the integral value can get very large, so often you can achieve good results with very small values of even 0 for the Ki term.
+Open the `lab7.launch` file and set the Kp value to 0.01.  Now compile and launch the lab.  Set the robot on a line and assess how well the robot follows the line.  Kill `lab7.launch` and adjust the parameters in the launch file slowly to achieve a smooth drive down the length of the line.  Remember that the integral value can get very large, so often you can achieve good results with very small values of even 0 for the Ki term.
 
 ## Challenge
 

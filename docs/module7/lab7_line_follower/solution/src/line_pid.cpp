@@ -3,7 +3,7 @@
 #include <dynamic_reconfigure/server.h>
 #include "geometry_msgs/Twist.h"
 #include "std_msgs/Float32.h"
-#include "lab8_line_follower/PidConfig.h"
+#include "lab7_line_follower/PidConfig.h"
 
 geometry_msgs::Twist vel_msg;
 std_msgs::Float32 error_msg;
@@ -35,7 +35,7 @@ void errorCallback(const std_msgs::Float32& msg)
 }
 
 
-void reconfigure_callback(lab8_line_follower::PidConfig &config, uint32_t level)
+void reconfigure_callback(lab7_line_follower::PidConfig &config, uint32_t level)
 {
   if (first_reconfig)
   {
@@ -57,8 +57,8 @@ int main(int argc, char **argv)
   nh.param<double>("Ki", Ki, 0.0);
   nh.param<double>("Kd", Kd, 0.03);
 
-  dynamic_reconfigure::Server<lab8_line_follower::PidConfig> config_server;
-  dynamic_reconfigure::Server<lab8_line_follower::PidConfig>::CallbackType f;
+  dynamic_reconfigure::Server<lab7_line_follower::PidConfig> config_server;
+  dynamic_reconfigure::Server<lab7_line_follower::PidConfig>::CallbackType f;
   f = boost::bind(&reconfigure_callback, _1, _2);
   config_server.setCallback(f);
 

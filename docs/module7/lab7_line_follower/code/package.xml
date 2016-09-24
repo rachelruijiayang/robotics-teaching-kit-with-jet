@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>lab8_line_follower</name>
+  <name>lab7_line_follower</name>
   <version>0.0.0</version>
-  <description>Jetbot Lab 8</description>
+  <description>Jetbot Lab 7</description>
 
   <maintainer email="jkerfs@calpoly.edu">jkerfs</maintainer>
 
