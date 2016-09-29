@@ -59,23 +59,66 @@
 
 ## Module 5: Dead Reckoning
 
+### Lecture Slides
+- **5.1** Introduction to Dead Reckoning
+- **5.2** Calculating Positions
+- **5.3** Sensor Fusion and Kalman Filters
+
+### Labs
+- **Lab 5**: Dead Reckoning
+
+### Quiz Questions
+
 ---
 
 ## Module 6: Path Planning
 
----
+### Lecture Slides
+- **6.1** Introduction to Path Planning
+- **6.2** A* Planning
 
-## Module 7: Robot Localization
+### Labs
+- **Lab 6**: Path Planning
 
----
-
-## Module 8: Control
-
----
-
-## Module 9: Obstacle Avoidance
+### Quiz Questions
 
 ---
+
+## Module 7: Control
+
+### Lecture Slides
+
+### Labs
+- **Lab 7**: Line Following
+
+### Quiz Questions
+
+---
+
+## Module 8: Robot Localization
+
+### Lecture Slides
+- **8.1** Introduction to Robot Localization
+- **8.2** Localization with Particle Filters
+
+### Labs
+- **Lab 8**: Localization
+
+### Quiz Questions
+
+---
+
+## Module 9: Mapping
+
+### Lecture Slides
+
+### Labs
+- **Lab 9**: Mapping
+
+### Quiz Questions
+
+---
+
 ## Module 10: Final Project
 
 - Harvester
