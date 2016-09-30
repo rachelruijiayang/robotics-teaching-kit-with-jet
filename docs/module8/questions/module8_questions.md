@@ -1,21 +1,21 @@
-# Module 4: Questions
+# Module 8: Questions
 
-1. What type of Machine Learning has unlabeled data, but the system learns from feedback on its actions?
+1.  What is the difference between multinomial resampling and systematic resampling?
 
-2. A machine learning model produces 40 true positives, 10 false positives, and 30 true negatives on 100 training examples.  What is the precision and recall?
+2.  In Monte Carlo Localization, what does each of the particles represent?
 
-3. A model has an accuracy of 95% on training data, but only 55% accuracy on test data.  Qualitatively, what is the bias (high/low) and variance (high/low)?
+3.  What is the purpose of incorporating motion noise into the motion model?
 
-4. What are some relevant features for building a model that predicts where someone will enjoy a movie?
+4.  What is the purpose of incorporating sensor noise into the sensor model?
 
-5. Consider a fully-connected Neural Network with 10 input neurons, two hidden layers each with 30 neurons, and an output layer with 3 neurons.  How many weights are in this Neural Network (ignore any bias terms)?
+5.  Describe the problem of particle deprivation.
 
-6. Consider a Neural Network that receives a 10 by 10 image and applies a convolution layer with 7 filters, a kernel size of 3, and a stride of 1.  Assume that network pads the image with zeros, and that each of these zeros is included in the multiplications.  How many individual multiplication operations are applied?
+6.  Describe 2 possible ways of estimating the position of a robot after the particles begin converging.
 
-7. What is an example of an activation function for a Neural Network?
+7.  How can numbers be sampled from a Gaussian distribution to model motion or sensor noise?
 
-8. What is Gradient Descent used for in Neural Networks?
+8.  What limitations arise from performing localization using only wheel encoders?
 
-9. What syntax is used to specify model definitions in Caffe?
+9.  What active sensors can be used to aid in localization?  
 
-10. In Caffe, what layers are used for training a Neural Network that are not used in the deployed Neural Network?
+10.  What is the update step in Monte Carlo Localization?

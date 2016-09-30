@@ -1,53 +1,39 @@
-# Module 4: Answers
+# Module 8: Answers
 
-1. What type of Machine Learning has unlabeled data, but the system learns from feedback on its actions?
+1.  What is the difference between multinomial resampling and systematic resampling?
 
-  **Reinforcement Learning**
+  ** Systematic resampling generates random samples that are evenly distributed throughout the sample space.  These samples will select higher weighted particles more often, but the sample space is evenly distributed.  Multinomial resampling just generates samples that can land anywhere in the sample space. **
 
-2. A machine learning model produces 40 true positives, 10 false positives, and 30 true negatives on 100 training examples.  What is the precision and recall?
+2.  In Monte Carlo Localization, what does each of the particles represent?
 
-  - **Precision: .8**
-  - **Recall: .66**
+  ** Each particle represents a possible pose for the robot. **
 
-3. A model has an accuracy of 95% on training data, but only 55% accuracy on test data.  Qualitatively, what is the bias (high/low) and variance (high/low)?
+3.  What is the purpose of incorporating motion noise into the motion model?
 
-  **Low Bias, High Variance**
+  ** The motion model noise accounts for the physical "noise" that occurs when the robot moves.  Because of effects such as wheel slip, gear train inaccuracies, or electrical loses, a robot will not move exactly as commanded. **
 
-4. What are some relevant features for building a model that predicts where someone will enjoy a movie?
+4.  What is the purpose of incorporating sensor noise into the sensor model?
 
-  **Any of the following would be acceptable**
+  ** Sensor noise is added to model the fact that sensor readings are not completely reliable.  A sensor that is measuring a fixed object may produce a distribution of readings.  This is the effect that the sensor noise is attempting to capture. **
 
-  - **How many friends of the person enjoyed the movie**
-  - **Number of actors in the movie that the person likes**
-  - **Whether the person likes the genre of that movie**
-  - **Critics rating of the movie**
+5.  Describe the problem of particle deprivation.
 
-5. Consider a fully-connected Neural Network with 10 input neurons, two hidden layers each with 30 neurons, and an output layer with 3 neurons.  How many weights are in this Neural Network (ignore any bias terms)?
+  ** As particles are resample, the particles will converge around the higher weighted particles.  In location where the weights of the particles is low, these particles will have a small probability of being resampled.  Eventually the particles in these areas will be removed. **
 
-  **10 x 30 x 30 x 3 = 27,000**
+6.  Describe 2 possible ways of estimating the position of a robot after the particles begin converging.
 
-6. Consider a Neural Network that receives a 10 by 10 image and applies a convolution layer with 7 filters, a kernel size of 3, and a stride of 1.  Assume that network pads the image with zeros, and that each of these zeros is included in the multiplications.  How many individual multiplication operations are applied?
+7.  How can numbers be sampled from a Gaussian distribution to model motion or sensor noise?
 
-  **(10 x 10) x (3 x 3) x 7 = 6,300**
+  ** One technique for sampling numbers from a Gaussian distribution is the Box-Muller transform. **
 
-7. What is an example of an activation function for a Neural Network?
+8.  What limitations arise from performing localization using only wheel encoders?
+ 
+  ** Because of wheel slippage, the localization estimate can drift over time and become very inaccurate. **
 
-  **Any of the following are acceptable:**
+9.  What active sensors can be used to aid in localization?  
 
-  - **Rectified Linear Activation (ReLU)**
-  - **Hyperbolic Tanger (tanh)**
-  - **Sigmoid**
+  ** Laser scanner, sonar, radar, camera, radio **
 
-8. What is Gradient Descent used for in Neural Networks?
+10.  What is the update step in Monte Carlo Localization?
 
-  **Gradient Descent is used to minimize the error of the Neural Network during training.**
-
-9. What syntax is used to specify model definitions in Caffe?
-
-  **Protocol Buffer**
-
-10. In Caffe, what layers are used for training a Neural Network that are not used in the deployed Neural Network?
-
-  - **data layers (perform cropping and subtraction of image means)**
-  - **accuracy layer**
-  - **loss layer**
+  ** The update step is used to incorporate the latest sensor reading in order to generate new weights for each of the particles. **
