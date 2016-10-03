@@ -12,7 +12,7 @@
 ### Labs
 - **Lab 1**: Building the Robot
 
-### Quiz Questions
+### Quizzes and Answers
 
 ---
 
@@ -25,7 +25,7 @@
 ### Labs
 - **Lab 2**: Sense and Avoid
 
-### Quiz Questions
+### Quizzes and Answers
 
 ---
 
@@ -39,7 +39,7 @@
 ### Labs
 - **Lab 3**: Computer Vision
 
-### Quiz Questions
+### Quizzes and Answers
 
 ---
 
@@ -67,7 +67,7 @@
 ### Labs
 - **Lab 5**: Dead Reckoning
 
-### Quiz Questions
+### Quizzes and Answers
 
 ---
 
@@ -80,18 +80,20 @@
 ### Labs
 - **Lab 6**: Path Planning
 
-### Quiz Questions
+### Quizzes and Answers
 
 ---
 
 ## Module 7: Control
 
 ### Lecture Slides
+- **7.1** Introduction to Control Systems
+- **7.2** PID Control
 
 ### Labs
 - **Lab 7**: Line Following
 
-### Quiz Questions
+### Quizzes and Answers
 
 ---
 
@@ -104,18 +106,20 @@
 ### Labs
 - **Lab 8**: Localization
 
-### Quiz Questions
+### Quizzes and Answers
 
 ---
 
 ## Module 9: Mapping
 
 ### Lecture Slides
+- **9.1** Introduction to Mapping
+- **9.2** SLAM
 
 ### Labs
 - **Lab 9**: Mapping
 
-### Quiz Questions
+### Quizzes and Answers
 
 ---
 

@@ -19,6 +19,10 @@ http://www.ladyada.net/learn/soldering/thm.html
 - heat gun for heat shrink
 - small screwdrivers
 
+## Overall Electronic Diagram
+
+![](module1/lab1_building_robot/resources/electrical/partlayout.png)
+
 ### 1. Power Switch
 
 This is the main power switch that connects the battery to the Jetson TK1 and the
@@ -83,24 +87,26 @@ are exposed.
 
 \pagebreak
 
-### 3. Mount the Jetson TK1
+### 3. Mount the Jetson Board
 
-The Jetson TK1 will sit above the USB hub.
+The Jetson TK1/TX1 will sit above the USB hub.  Use 2.5" 4-40 hex standoffs for the TX1 and 1" 4-40 hex standoffs for the TK1.
 
-* Screw the 1" 4-40 hex standoffs to the mounting plate.
+* Screw the standoffs to the mounting plate.
 
   ![](module1/lab1_building_robot/resources/electrical/usbhub2.JPG)
 
 \pagebreak
 
-* Once the spacers are secure, attach the Jetson TK1 to the standoffs using 4-40 screw.
+* Once the spacers are secure, attach the Jetson to the standoffs using 4-40 screw.
 
   ![](module1/lab1_building_robot/resources/electrical/tk1_1.JPG)
 
 ### 4. Mount the Arduino Mega
 
 The Arduino Mega should be mounted in the same way as the Jetson TK1.  The standoffs for the
-Arduino Mega are 1/2" tall.
+Arduino Mega are 1/2" tall. The screws are 4-40 sockethead machine screws 3/8".
+
+  ![](module1/lab1_building_robot/resources/electrical/arduino.JPG)
 
 \pagebreak
 
