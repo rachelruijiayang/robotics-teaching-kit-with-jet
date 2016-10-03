@@ -2,7 +2,7 @@
 
 ## Overview
 
-This kit includes examples, lecture slides, questions/answer sets ("Q/A"), labs, and projects for teaching a course on robotics.
+This kit includes example code, lecture slides, questions/answer sets ("Q/A"), labs/solutions, and projects for teaching a course on robotics.
 The material is organized into modules that cover a specific topic.  It is helpful to proceed in order
 through the modules, but each module is self-contained so you are free to skip or omit modules as needed.
 
