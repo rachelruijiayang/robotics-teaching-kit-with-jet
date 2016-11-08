@@ -45,9 +45,9 @@ https://docs.google.com/spreadsheets/d/14N_tkfNsItY9CV0vUGHCPpcZ-mqgsZsC87CQEHBX
 
 
 
-The majority of the parts can be purchased through an Amazon School List using these links:
+The majority of the parts can be purchased through an Amazon Wish List using these links:
 
-http://amzn.com/sl/3DMRUUDFJ51N3 (TX1 version)
+https://amzn.com/w/3L5TJL80OQO12 (TX1 version)
 
 http://amzn.com/sl/37PDO9ZVT2W0M (TK1 version)
 
