@@ -49,7 +49,7 @@ The majority of the parts can be purchased through an Amazon School List using t
 
 http://amzn.com/sl/3DMRUUDFJ51N3 (TX1 version)
 
-http://amzn.com/sl/1ASPJCPF2J1VC (TK1 version)
+http://amzn.com/sl/37PDO9ZVT2W0M (TK1 version)
 
 The `/hardware` folder includes illustrator files that can be used to laser cut
 the plastic base plate and the sonar holders.  The `nvidia_robot.ai` file is the
