@@ -42,11 +42,13 @@ The full hardware bill of materials (BOM) can be found here:
 [Jet BOM (TX1)](https://docs.google.com/spreadsheets/d/1jGn7AG5NivTjxPEppJEdIUVxhm5nB17T3ZtRTCYyuQg/edit?usp=sharing)
  
 [Jet BOM (TK1)](https://docs.google.com/spreadsheets/d/14N_tkfNsItY9CV0vUGHCPpcZ-mqgsZsC87CQEHBXMmY/edit?usp=sharing)
+ 
 
 A large portion (but not all) of the parts can be purchased through an Amazon Wish List using these links:
 
 [Jet BOM (TX1) Amazon Wish List](https://amzn.com/w/3L5TJL80OQO12)
  
 [Jet BOM (TK1) Amazon Wish List](https://amzn.com/w/1T64PN8QVFRRI)
+ 
 
 The [HardwareTemplates](https://drive.google.com/drive/folders/0B8F3iGtBky5JQUIzR1JTd0xWRzg?usp=sharing) shared directory includes design files that can be used to laser cut the Jet's base mounting plate and sonar holders.  The `nvidia_robot` files are the layout of the base plate. The `FiveSonarArrangement` files are the layout of the five sonar holders.
