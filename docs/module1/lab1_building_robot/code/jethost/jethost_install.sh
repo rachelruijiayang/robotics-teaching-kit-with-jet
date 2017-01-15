@@ -32,5 +32,5 @@ rm -rf ros_lib
 rosrun rosserial_arduino make_libraries.py .
 
 #Setup Platformio
-sudo apt-get install platformio
+sudo pip install platformio
 platformio platforms install atmelavr

@@ -111,7 +111,7 @@ Once the install is complete, you can go ahead and disconnect the micro USB cabl
 
   `sudo echo "YOUR_IP_ADDRESS jethost" >> /etc/hosts`
 
-  `sudo echo "JET_IP_ADDRESS jetbot >> /etc/hosts"`
+  `sudo echo "JET_IP_ADDRESS jet" >> /etc/hosts`
 
  * Set ROS_MASTER_URI in .bashrc
 
