@@ -7,10 +7,13 @@
   <xacro:include filename="$(find jet_description)/urdf/materials.xacro"/>
 
   <link name="base_link">
+  </link>
+
+  <link name="body_link">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <box size=".25 .35 .05"/>
+        <box size=".35 .25 .05"/>
       </geometry>
       <material name="green">
         <color rgba="0 .8 .0 .8"/>
@@ -19,7 +22,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <box size=".25 .35 .05"/>
+        <box size=".35 .25 .05"/>
       </geometry>
     </collision>
     <inertial>
@@ -30,13 +33,13 @@
 
   <link name="caster">
     <visual name='caster_visual'>
-      <origin rpy="0 0 0" xyz="0 .15 -.06"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <cylinder radius="0.03" length="0.12"/>
       </geometry>
     </visual>
     <collision name='caster_collision'>
-      <origin rpy="0 0 0" xyz="0 .15 -.06"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <cylinder radius="0.03" length="0.12"/>
       </geometry>
@@ -63,7 +66,7 @@
       <geometry>
         <cylinder length="0.03" radius="0.1"/>
       </geometry>
-      <origin rpy="0 1.57075 0" xyz="0 0 0"/>
+      <origin rpy="0 1.57075 1.57075" xyz="0 0 0"/>
       <material name="gray">
         <color rgba=".1 .1 .1 1"/>
       </material>
@@ -72,7 +75,7 @@
       <geometry>
         <cylinder length="0.03" radius="0.1"/>
       </geometry>
-      <origin rpy="0 1.57075 0" xyz="0 0 0"/>
+      <origin rpy="0 1.57075 1.57075" xyz="0 0 0"/>
     </collision>
     <inertial>
       <mass value="1"/>
@@ -85,7 +88,7 @@
       <geometry>
         <cylinder length="0.03" radius="0.1"/>
       </geometry>
-      <origin rpy="0 1.57075 0" xyz="0 0 0"/>
+      <origin rpy="0 1.57075 1.57075" xyz="0 0 0"/>
       <material name="gray">
         <color rgba=".1 .1 .1 1"/>
       </material>
@@ -94,7 +97,7 @@
       <geometry>
         <cylinder length="0.03" radius="0.1"/>
       </geometry>
-      <origin rpy="0 1.57075 0" xyz="0 0 0"/>
+      <origin rpy="0 1.57075 1.57075" xyz="0 0 0"/>
     </collision>
     <inertial>
       <mass value="10"/>
@@ -128,14 +131,14 @@
 
   <link name="camera_link">
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 -1.57075"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <box size=".05 .02 .05"/>
       </geometry>
     </collision>
 
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 -1.57075"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <box size=".05 .02 .05"/>
       </geometry>
@@ -160,61 +163,68 @@
     </inertial>
   </link>
 
-  <joint name="imu_joint" type="fixed">
+  <joint name="body_base" type="fixed">
     <axis xyz="1 0 0"/>
     <origin xyz="0 0 0"/>
     <parent link="base_link"/>
+    <child link="body_link"/>
+  </joint>
+
+  <joint name="imu_joint" type="fixed">
+    <axis xyz="1 0 0"/>
+    <origin xyz="0 0 0"/>
+    <parent link="body_link"/>
     <child link="gyro_link"/>
   </joint>
 
   <joint name="sonar1_joint" type="fixed">
       <axis xyz="0 1 0" />
       <origin xyz="-.1 -.15 -.05" rpy="0 0 -2.356125"/>
-      <parent link="base_link"/>
+      <parent link="body_link"/>
       <child link="sonar1_link"/>
   </joint>
 
   <joint name="sonar2_joint" type="fixed">
       <axis xyz="0 1 0" />
       <origin xyz="0 -.15 -.05" rpy="0 0 -1.57075"/>
-      <parent link="base_link"/>
+      <parent link="body_link"/>
       <child link="sonar2_link"/>
   </joint>
 
   <joint name="sonar3_joint" type="fixed">
       <axis xyz="0 1 0" />
       <origin xyz=".1 -.15 -.05" rpy="0 0 -.785375"/>
-      <parent link="base_link"/>
+      <parent link="body_link"/>
       <child link="sonar3_link"/>
   </joint>
 
   <joint name="camera_joint" type="fixed">
-      <axis xyz="0 1 0" />
-      <origin xyz="0 -.15 .05" rpy="0 0 0"/>
-      <parent link="base_link"/>
+      <axis xyz="1 0 0" />
+      <origin xyz=".15 0 .05" rpy="0 0 0"/>
+      <parent link="body_link"/>
       <child link="camera_link"/>
   </joint>
 
   <joint name="caster_base_joint" type="fixed">
-    <parent link="base_link"/>
+    <parent link="body_link"/>
     <child link="caster"/>
-    <origin xyz="0 0 0"/>
+    <origin xyz="-.15 0 -.05"/>
     <axis xyz="0 0 1"/>
   </joint>
 
   <joint name="right_wheel_joint" type="revolute">
-    <parent link="base_link"/>
+    <parent link="body_link"/>
     <child link="right_wheel"/>
-    <origin xyz="0.15 -.05 -.03"/>
-    <axis xyz="1 0 0"/>
+    <origin xyz="0.08 -.15 -.03"/>
+    <axis xyz="0 1 0"/>
     <limit effort="100" velocity="100.0" lower="-5000" upper="5000" />
   </joint>
 
   <joint name="left_wheel_joint" type="revolute">
-    <parent link="base_link"/>
+    <parent link="body_link"/>
     <child link="left_wheel"/>
-    <origin xyz="-0.15 -.05 -.03"/>
-    <axis xyz="1 0 0"/>
+    <origin xyz="0.08 .15 -.03"/>
+    <axis xyz="0 1 0"/>
     <limit effort="100" velocity="100.0" lower="-5000" upper="5000"/>
   </joint>
 
@@ -241,3 +251,4 @@
   </transmission>
 
 </robot>
+
