@@ -48,4 +48,4 @@ A large portion (but not all) of the parts can be purchased through an Amazon Wi
  
  
 
-The [HardwareTemplates](https://drive.google.com/drive/folders/0B8F3iGtBky5JQUIzR1JTd0xWRzg?usp=sharing) shared directory includes design files that can be used to laser cut the Jet's base mounting plate and sonar holders.  The `JetbotPlate` files are the layout of the base plate. The `SonarHolders` files are the layout of the 10 sonar holders.
+The [HardwareTemplates](https://drive.google.com/drive/folders/0B8F3iGtBky5JQUIzR1JTd0xWRzg?usp=sharing) shared directory includes design files that can be used to laser cut the Jet's base mounting plate and sonar holders.  The `JetbotPlate` files are the layout of the base plate in different, common file formats. The `SonarHolders` files are the layout of the sonar holders.
