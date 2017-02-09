@@ -24,7 +24,7 @@ A useful technique for building robotic systems is a finite-state machine.  A fi
 To perform this lab, you will need to get the sense_and_avoid template into your catkin workspace.  First ensure that your Jet has internet access by connecting it using WiFi or ethernet.  Next ssh into Jet and enter the following command:
 
 ```
-wget http://http://nvidiagputeachingkit.github.io/rosjet/labs/lab2/lab2_sense_and_avoid-code.zip
+wget https://github.com/NVIDIAGPUTeachingKit/rosjet/raw/gh-pages/static/labs/lab2/lab2_sense_and_avoid-code.zip
 ```
 
 Now unzip the lab:
