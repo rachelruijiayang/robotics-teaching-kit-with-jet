@@ -52,6 +52,7 @@ sudo apt-get -y install ros-jade-usb-cam
 sudo apt-get -y install ros-jade-ros-control
 sudo apt-get -y install ros-jade-dynamic-reconfigure
 sudo apt-get -y install ros-jade-fake-localization
+sudo apt-get -y install ros-jade-joint-state-controller
 
 # Configure Catkin Workspace
 source /opt/ros/jade/setup.bash
