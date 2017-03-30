@@ -86,7 +86,7 @@ gsettings set org.gnome.desktop.screensaver lock-enabled false
 sudo apt-get -y install compizconfig-settings-manager
 gsettings set org.gnome.desktop.interface enable-animations false
 gsettings set com.canonical.Unity.Lenses remote-content-search none
-echo '[SeatDefaults]\nautologin-user=ubuntu' > login_file; sudo mv login_file /etc/lightdm/lightdm.conf
+echo -e '[SeatDefaults]\nautologin-user=ubuntu' > login_file; sudo mv login_file /etc/lightdm/lightdm.conf
 gsettings set org.gnome.Vino enabled true
 gsettings set org.gnome.Vino disable-background true
 gsettings set org.gnome.Vino prompt-enabled false
