@@ -65,7 +65,7 @@ More DL labs and detailed descriptions can be found [here](https://nvidia.qwikla
 
 *To enable these labs for your students, please create an account at https://nvidia.qwiklab.com and send your Qwiklab account email address to [NVDLI@nvidia.com](mailto: NVDLI@nvidia.com) with the subject line “DLI Robotics Teaching Kit Qwiklab Access”. Email instructions will then follow for giving access to your students.*
 
-Please see `Online DLI Labs.pdf` from the DLI Teaching Kit `.zip` for more details.
+Please see `Online DLI Labs.pdf` from the Robotics Teaching Kit with 'Jet' `.zip` for more details.
 
 ### About the NVIDIA Deep Learning Institute (DLI)
 The NVIDIA DLI offers hands-on training for developers, data scientists, and researchers looking to solve challenging problems with deep learning.
