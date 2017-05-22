@@ -1,6 +1,6 @@
 # Robotics Teaching Kit with 'Jet'
 
-The Robotics Teaching Kit with 'Jet' includes example code, lecture slides, questions/answer sets ("Q/A"), labs/solutions, and projects for teaching a course on robotics. The material is organized into modules that cover a specific topic.  It is helpful to proceed in order through the modules, but each module is self-contained so you are free to skip or omit modules as needed.
+The Robotics Teaching Kit with 'Jet' includes example code, lecture slides, quiz/exam problem sets, labs/solutions, and projects for teaching a full-term curriculum robotics course. The material is organized into modules that cover specific topics. It is logical to teaching in order through the modules, but each module is self-contained so instructors can re-order modules as needed.
 
 The kit is produced jointly by NVIDIA and Cal Poly San Luis Obispo.  All material is available under the [Creative Commons Attribution-NonCommercial License](http://creativecommons.org/licenses/by-nc/4.0/).
 
