@@ -6,7 +6,7 @@ The kit is produced jointly by NVIDIA and Cal Poly San Luis Obispo.  All materia
 
 ## About the Content
 
-##### Examples
+#### Examples
 
 The `/examples` folder includes a variety of demonstrations.  Many of the examples
 have been converted into lab assignments; therefore the examples should not be provided
