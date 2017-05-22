@@ -63,7 +63,7 @@ Online DLI Qwiklab topics include:
 
 More DLI labs and detailed descriptions can be found [here](https://nvidia.qwiklab.com/tags/Deep%20Learning) in the catalogue. To see a list of ALL available labs please go to the [catalog](https://nvidia.qwiklab.com/catalog) and click on the "Labs" tab.
 
-*To enable these labs for your students, please create an account at https://nvidia.qwiklab.com and send your Qwiklab account email address to [NVDLI@nvidia.com](mailto: NVDLI@nvidia.com) with the subject line “DLI Robotics Teaching Kit Qwiklab Access”. Email instructions will then follow for giving access to your students.*
+*To enable these labs for your students, please create an account at [nvidia.qwiklab.com](https://nvidia.qwiklab.com) and send your Qwiklab account email address to [NVDLI@nvidia.com](mailto: NVDLI@nvidia.com) with the subject line “DLI Robotics Teaching Kit Qwiklab Access”. Email instructions will then follow for giving access to your students.*
 
 Please see `Online DLI Labs.pdf` from the Robotics Teaching Kit with 'Jet' `.zip` for more details.
 
