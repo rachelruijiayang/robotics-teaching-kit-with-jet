@@ -4,9 +4,9 @@ The Robotics Teaching Kit with 'Jet' includes example code, lecture slides, ques
 
 The kit is produced jointly by NVIDIA and Cal Poly San Luis Obispo.  All material is available under the [Creative Commons Attribution-NonCommercial License](http://creativecommons.org/licenses/by-nc/4.0/).
 
-## Content
+## About the Content
 
-### Examples
+##### Examples
 
 The `/examples` folder includes a variety of demonstrations.  Many of the examples
 have been converted into lab assignments; therefore the examples should not be provided
@@ -18,7 +18,7 @@ You can run an example by following the instructions below:
 3. Enter the command `catkin_make && source devel/setup.sh`
 4. Run any of the examples by typing `rosrun [example_name] [example_name]`
 
-### Docs
+#### Docs
 
 The `/docs` folder contains the quizzes, projects and labs for the course.  To create the .pdf and .docx versions
 of the documents, you must install [pandoc](http://pandoc.org/installing.html).
@@ -30,27 +30,25 @@ well as zipped folders that contain the code and solutions for the labs.
 Students should receive both the lab description (.docx or .pdf) and the code.zip folder.
 The solution.zip should be kept by the instructor.
 
-### Hardware
+## 'Jet' Robot Hardware
 
-The full hardware bill of materials (BOM) can be found here:  
+The full hardware bill of materials (BOM), including pricing and where to buy now, can be found here:  
 
 [Jet BOM (TX1)](https://docs.google.com/spreadsheets/d/1jGn7AG5NivTjxPEppJEdIUVxhm5nB17T3ZtRTCYyuQg/edit?usp=sharing)
  
 [Jet BOM (TK1)](https://docs.google.com/spreadsheets/d/14N_tkfNsItY9CV0vUGHCPpcZ-mqgsZsC87CQEHBXMmY/edit?usp=sharing)
  
- 
-
-A large portion (but not all) of the parts can be purchased through an Amazon Wish List using these links:
+A large portion (but not all) of the parts can be purchased now through an Amazon Wish List using these links:
 
 [Jet BOM (TX1) Amazon Wish List](https://amzn.com/w/3L5TJL80OQO12)
  
 [Jet BOM (TK1) Amazon Wish List](https://amzn.com/w/1T64PN8QVFRRI)
  
- 
-
 The [HardwareTemplates](https://drive.google.com/drive/folders/0B8F3iGtBky5JQUIzR1JTd0xWRzg?usp=sharing) shared directory includes design files that can be used to laser cut the Jet's base mounting plate and sonar holders.  The `JetbotPlate` files are the layout of the base plate in different, common file formats. The `SonarHolders` files are the layout of the sonar holders.
 
-### NVIDIA Deep Learning Institute (DLI) Online Labs
+**A complete, singular bundle will be shipping globally soon! Please contact us at [NVDLI@nvidia.com](mailto: NVDLI@nvidia.com) if you are interested in ordering from the first available units.**
+
+## NVIDIA Deep Learning Institute (DLI) Online Labs
 
 The Robotics Teaching Kit with 'Jet' includes access to free online Deep Learnining Institute (DLI) labs (“Qwiklabs”) using GPUs in the cloud - a value of up to $30 per person per lab. These online labs reinforce deep learning concepts presented in the teaching kit to students in a more applied manner. Each Qwiklab is a live, hands-on, self-paced learning environment that includes a set of interactive instructions to walk students through applied deep learning concepts. Students must complete each lab within the allotted time.
 
@@ -67,7 +65,7 @@ More DLI labs and detailed descriptions can be found [here](https://nvidia.qwikl
 
 Please see `Online DLI Labs.pdf` from the Robotics Teaching Kit with 'Jet' `.zip` for more details.
 
-### About the NVIDIA Deep Learning Institute (DLI)
+## About the NVIDIA Deep Learning Institute (DLI)
 The NVIDIA DLI offers hands-on training for developers, data scientists, and researchers looking to solve challenging problems with deep learning.
 
 Through self-paced online labs and instructor-led workshops, DLI provides training on the latest techniques for designing, training, and deploying neural networks across a variety of application domains including self-driving cars, healthcare, robotics, finance, and video analytics.
