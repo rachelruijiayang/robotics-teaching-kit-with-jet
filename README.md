@@ -46,6 +46,8 @@ The [HardwareTemplates](https://drive.google.com/drive/folders/0B8F3iGtBky5JQUIz
 
 **A complete, singular bundle will be shipping globally soon! Please contact us at [NVDLI@nvidia.com](mailto: NVDLI@nvidia.com) if you are interested in ordering from the first available units.**
 
+A localized **Chinese** version of a 'Jet' bundle can be ordered [here](http://www.jetsoner.com/forum.php?mod=viewthread&tid=84&extra=page%3D1).
+
 ## NVIDIA Deep Learning Institute (DLI) Online Labs
 
 The Robotics Teaching Kit with 'Jet' includes access to free online Deep Learnining Institute (DLI) labs (“Qwiklabs”) using GPUs in the cloud - a value of up to $30 per person per lab. These online labs reinforce deep learning concepts presented in the teaching kit to students in a more applied manner. Each Qwiklab is a live, hands-on, self-paced learning environment that includes a set of interactive instructions to walk students through applied deep learning concepts. Students must complete each lab within the allotted time.
