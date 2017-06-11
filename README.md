@@ -32,15 +32,15 @@ The solution.zip should be kept by the instructor.
 
 ## 'Jet' Robot Hardware
 
+The TX1 'Jet Robot Kit and the TK1 'Jet' Robot Kit are available for purchase through *Servocity*:
+
+* [TX1 ‘Jet’ Robot Kit](https://www.servocity.com/tx1-jet-robot-kit)
+* [TK1 ‘Jet’ Robot Kit](https://www.servocity.com/tk1-jet-robot-kit)
+
 The full hardware bill of materials (BOM), including pricing and where to buy now, can be found here:  
 
 * [Jet BOM (TX1)](https://docs.google.com/spreadsheets/d/1jGn7AG5NivTjxPEppJEdIUVxhm5nB17T3ZtRTCYyuQg/edit?usp=sharing)
 * [Jet BOM (TK1)](https://docs.google.com/spreadsheets/d/14N_tkfNsItY9CV0vUGHCPpcZ-mqgsZsC87CQEHBXMmY/edit?usp=sharing)
- 
-A large portion (but not all) of the parts can be purchased now through an Amazon Wish List using these links:
-
-* [Jet BOM (TX1) Amazon Wish List](https://amzn.com/w/3L5TJL80OQO12)
-* [Jet BOM (TK1) Amazon Wish List](https://amzn.com/w/1T64PN8QVFRRI)
  
 The [HardwareTemplates](https://drive.google.com/drive/folders/0B8F3iGtBky5JQUIzR1JTd0xWRzg?usp=sharing) shared directory includes design files that can be used to laser cut the Jet's base mounting plate and sonar holders.  The `JetbotPlate` files are the layout of the base plate in different, common file formats. The `SonarHolders` files are the layout of the sonar holders.
 
