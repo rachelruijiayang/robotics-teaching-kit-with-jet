@@ -4,6 +4,20 @@ The Robotics Teaching Kit with 'Jet' includes example code, lecture slides, quiz
 
 The kit is produced jointly by NVIDIA and Cal Poly San Luis Obispo.  All material is available under the [Creative Commons Attribution-NonCommercial License](http://creativecommons.org/licenses/by-nc/4.0/).
 
+## 'Jet' Robot Hardware
+
+**The TX1 'Jet Robot Kit and the TK1 'Jet' Robot Kit are now available for purchase and shipping globally from Servocity!**
+
+* [TX1 ‘Jet’ Robot Kit](https://www.servocity.com/tx1-jet-robot-kit)
+* [TK1 ‘Jet’ Robot Kit](https://www.servocity.com/tk1-jet-robot-kit)
+
+The full hardware bill of materials (BOM), including pricing and where to buy now, can be found here:  
+
+* [TX1 ‘Jet’ Robot Kit BOM (TX1)](https://docs.google.com/spreadsheets/d/1jGn7AG5NivTjxPEppJEdIUVxhm5nB17T3ZtRTCYyuQg/edit?usp=sharing)
+* [TK1 ‘Jet’ Robot Kit BOM (TK1)](https://docs.google.com/spreadsheets/d/14N_tkfNsItY9CV0vUGHCPpcZ-mqgsZsC87CQEHBXMmY/edit?usp=sharing)
+ 
+The [HardwareTemplates](https://drive.google.com/drive/folders/0B8F3iGtBky5JQUIzR1JTd0xWRzg?usp=sharing) shared directory includes design files that can be used to laser cut the Jet's base mounting plate and sonar holders.  The `JetbotPlate` files are the layout of the base plate in different, common file formats. The `SonarHolders` files are the layout of the sonar holders.
+
 ## About the Content
 
 #### Examples
@@ -29,24 +43,6 @@ well as zipped folders that contain the code and solutions for the labs.
 
 Students should receive both the lab description (.docx or .pdf) and the code.zip folder.
 The solution.zip should be kept by the instructor.
-
-## 'Jet' Robot Hardware
-
-The TX1 'Jet Robot Kit and the TK1 'Jet' Robot Kit are available for purchase through *Servocity*:
-
-* [TX1 ‘Jet’ Robot Kit](https://www.servocity.com/tx1-jet-robot-kit)
-* [TK1 ‘Jet’ Robot Kit](https://www.servocity.com/tk1-jet-robot-kit)
-
-The full hardware bill of materials (BOM), including pricing and where to buy now, can be found here:  
-
-* [Jet BOM (TX1)](https://docs.google.com/spreadsheets/d/1jGn7AG5NivTjxPEppJEdIUVxhm5nB17T3ZtRTCYyuQg/edit?usp=sharing)
-* [Jet BOM (TK1)](https://docs.google.com/spreadsheets/d/14N_tkfNsItY9CV0vUGHCPpcZ-mqgsZsC87CQEHBXMmY/edit?usp=sharing)
- 
-The [HardwareTemplates](https://drive.google.com/drive/folders/0B8F3iGtBky5JQUIzR1JTd0xWRzg?usp=sharing) shared directory includes design files that can be used to laser cut the Jet's base mounting plate and sonar holders.  The `JetbotPlate` files are the layout of the base plate in different, common file formats. The `SonarHolders` files are the layout of the sonar holders.
-
-**A complete, singular bundle will be shipping globally soon! Please contact us at [NVDLI@nvidia.com](mailto: NVDLI@nvidia.com) if you are interested in ordering from the first available units.**
-
-A localized **Chinese** version of a 'Jet' bundle can be ordered [here](http://www.jetsoner.com/forum.php?mod=viewthread&tid=84&extra=page%3D1).
 
 ## NVIDIA Deep Learning Institute (DLI) Online Labs
 
