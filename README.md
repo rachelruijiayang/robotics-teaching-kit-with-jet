@@ -6,7 +6,7 @@ The kit is produced jointly by NVIDIA and Cal Poly San Luis Obispo.  All materia
 
 ## 'Jet' Robot Hardware
 
-**The TX1 'Jet Robot Kit and the TK1 'Jet' Robot Kit are now available for purchase and shipping globally from Servocity!**
+**The TX1 'Jet' Robot Kit and the TK1 'Jet' Robot Kit are now available for purchase and shipping globally from Servocity!**
 
 * [TX1 ‘Jet’ Robot Kit](https://www.servocity.com/tx1-jet-robot-kit)
 * [TK1 ‘Jet’ Robot Kit](https://www.servocity.com/tk1-jet-robot-kit)
