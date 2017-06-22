@@ -37,6 +37,10 @@ You can run an example by following the instructions below:
 The `/docs` folder contains the quizzes, projects and labs for the course.  To create the .pdf and .docx versions
 of the documents, you must install [pandoc](http://pandoc.org/installing.html).
 
+**NOTE: We currently recommend using the recently updated files in `/lab1_building_robot` from the latest Robotics-Teaching-Kit-with-Jet.zip static download instead of the files in `/lab1_building_robot` here in the repo (those files here in the repo will be updated soon). All other source files and documents generated from this repo are up to date.**
+
+**NOTE: Although we provide instructions for Pandoc on Windows, it has not yet been extensively tested - Linux is highly recommended**
+
 Then the labs can be built with the command `python make_labs.py` when you are in the
 `/docs` directory.  The build folder will then contain the compiled documentation as
 well as zipped folders that contain the code and solutions for the labs.
